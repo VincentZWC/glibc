@@ -53,6 +53,10 @@ Major new features:
   work, new resolvers can use a second argument which can be extended in
   the future, currently it contains the AT_HWCAP2 value.
 
+* Support for the  nds32 ABI 2 running on Linux has been add.  This port
+  requires at least binutils-2.32, gcc-9.0.0, and linux-4.17.  only one
+  ABI, nds32 ABI 2 soft-fp, is supported.
+
 Deprecated and removed features, and other changes affecting compatibility:
 
 * The copy_file_range function fails with ENOSYS if the kernel does not
