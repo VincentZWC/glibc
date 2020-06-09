@@ -396,7 +396,7 @@ ifeq ($(build-shared),yes)
 -include $(objpfx)multidir.mk
 $(objpfx)multidir.mk: $(common-objpfx)config.make
 	$(make-target-directory)
-	dir=`$(CC) $(CFLAGS) $(CPPFLAGS) -print-multi-directory`; \
+	dir=.; \
 	echo "multidir := $$dir" > $@T
 	mv -f $@T $@
 
